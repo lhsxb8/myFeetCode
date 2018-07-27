@@ -10,5 +10,6 @@ class Solution:
             if i > 0 and i not in newnums:
                 newnums.append(i)
         for i in range(len(newnums)):
-            if newnums != i+1:
+            if newnums[i] != i+1:
                 return i+1
+        return len(newnums)+1
